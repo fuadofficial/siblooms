@@ -3,28 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 80px;
-    background-color: rgb(203, 234, 237);
+.navbar{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-.header .logo{
-    display: flex;
-    align-items: center;
+.navbar ul li a{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
 }
-.header .logo img{
-    width: 100px;
-}
-.header .logo h1{
-    color: rgb(12, 59, 112);
-}
-.header .links a{
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
+.navbar-brand{
+    font-size: 30px;
     font-weight: 600;
-    margin-right: 30px;
+    color: rgb(14, 93, 132);
+}
+.d-block{
+    width: 100%;
+    height: 90vh;
 }
