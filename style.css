@@ -16,7 +16,7 @@
     font-weight: 600;
     color: rgb(14, 93, 132);
 }
-.d-block{
+.carousel-item img{
     width: 100%;
     height: 90vh;
 }
