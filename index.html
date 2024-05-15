@@ -148,22 +148,20 @@
         </div>
     </div>
 
-    <form action="https://api.web3forms.com/submit" method="POST">
+    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateForm()">
         <div class="contact-page">
             <h1>Contact Us</h1>
             <div class="form">
                 <input type="hidden" name="access_key" value="7858cda8-1d9a-4ede-aa40-b883d3e41aca">
-
-                <input type="text" name="name" placeholder="   Name">
-                <input type="text" name="place" placeholder="   Place">
-                <input id="email" name="email" type="email" placeholder="   Email">
-                <input type="numbre" name="numbre" placeholder="   Phone Number">
-                <input class="message" type="message" name="message" placeholder="   Message">
-                <button class="Submit btn btn-success">Submit</button>
+                <input type="text" id="name" name="name" placeholder="Name">
+                <input type="text" id="place" name="place" placeholder="Place">
+                <input id="email" name="email" type="email" placeholder="Email">
+                <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
+                <button id="submitBtn" type="submit" class="Submit btn btn-success">Submit</button>
             </div>
+        </div>
     </form>
 
-    </div>
     <footer>
         <div class="footer bg-dark">
             <p>© 2024 Siblooms, Inc.
