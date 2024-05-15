@@ -147,13 +147,22 @@
             </div>
         </div>
     </div>
-    <div class="contact-page">
-        <h1>Contact Us</h1>
-        <div class="form">
-            <input type="text" placeholder="   Name">
-            <input type="text" placeholder="   Place">
-            <button class="Submit btn btn-success">Submit</button>
-        </div>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="contact-page">
+            <h1>Contact Us</h1>
+            <div class="form">
+                <input type="hidden" name="access_key" value="7858cda8-1d9a-4ede-aa40-b883d3e41aca">
+
+                <input type="text" name="name" placeholder="   Name">
+                <input type="text" name="place" placeholder="   Place">
+                <input id="email" name="email" type="email" placeholder="   Email">
+                <input type="numbre" name="numbre" placeholder="   Phone Number">
+                <input class="message" type="message" name="message" placeholder="   Message">
+                <button class="Submit btn btn-success">Submit</button>
+            </div>
+    </form>
+
     </div>
     <footer>
         <div class="footer bg-dark">
@@ -178,6 +187,7 @@
 
 
 
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -187,7 +197,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
